@@ -1,0 +1,58 @@
+{% extends 'includes/include.html' %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="../../static/css/MenuAdmin.css">
+    <style>
+        label {
+            font-size: 12px;
+        }
+    </style>
+</head>
+{% include "includes/sidebar.html" %}
+
+<div class="container">
+    <div class="daftarBurung">
+        <h2>Isi Data Burung</h2>
+        <form method="post" action="/daftarBurung">
+            <hr>
+            <div>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+                    {{message}}
+                </div>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+                <label for="nm_burung">Nama Burung</label>
+                <input class="form-control" type="text" maxlength="35" name="nm_burung" required><br>
+                <label for="spesies">Spesies</label>
+                <textarea class="form-control" rows="4" name="spesies" required></textarea><br>
+                <label for="makanan">Makanan</label>
+                <textarea class="form-control" rows="3" name="makanan" required></textarea><br>
+                <label for="anatomi">Anatomi</label>
+                <textarea class="form-control" rows="4" name="anatomi" required></textarea><br>
+                <label for="habitat">Habitat</label>
+                <textarea class="form-control" rows="4" name="habitat" required></textarea><br>
+                <label for="umur">Umur</label>
+                <textarea class="form-control" rows="3" name="umur" required></textarea><br>
+                <label for="gambar">Url Gambar</label>
+                <input class="form-control" type="text" name="gambar" required><br>
+                <label for="suara">Url Suara</label>
+                <input class="form-control" type="text" name="suara" required><br>
+                <label for="video">Url Video</label>
+                <input class="form-control" type="text" name="video" required><br>
+                
+                <a style="margin-left:21px;"><br>
+                    <button type="submit" class="btn " style="background-color:#46DE99;color: white;">Submit</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

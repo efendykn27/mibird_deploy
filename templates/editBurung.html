@@ -1,0 +1,48 @@
+{% extends 'includes/include.html' %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="../../static/css/MenuAdmin.css">
+    <style>
+        label {
+            font-size: 12px;
+        }
+    </style>
+</head>
+{% include "includes/sidebar.html" %}
+
+<div class="container">
+    <div class="daftarBurung">
+        <h2>Update Data Burung</h2>
+        <form method="post" action="/updateBurung/{{editBurung.nama_burung}}">
+            <hr>
+            <div>
+                <label for="nm_burung">Nama Burung</label>
+                <input value="{{editBurung.nama_burung}}" maxlength="35" class="form-control" type="text"
+                    name="nm_burung" disabled ><br>            
+                <label for="spesies">Spesies</label>
+                <textarea class="form-control" rows="4" name="spesies" required>{{editBurung.spesies}}</textarea><br>
+                <label for="makanan">Makanan</label>
+                <textarea class="form-control" rows="3" name="makanan" required>{{editBurung.makanan}}</textarea><br>
+                <label for="anatomi">Anatomi</label>
+                <textarea class="form-control" rows="4" name="anatomi" required>{{editBurung.anatomi}}</textarea><br>
+                <label for="habitat">Habitat</label>
+                <textarea class="form-control" rows="4" name="habitat" required>{{editBurung.habitat}}</textarea><br>
+                <label for="umur">Umur</label>
+                <textarea class="form-control" rows="3" name="umur" required>{{editBurung.umur}}</textarea><br>
+                <label for="gambar">Url Gambar</label>
+                <input value="{{editBurung.gambar}}" class="form-control" type="text" name="gambar" required><br>
+                <label for="suara">Url Suara</label>
+                <input value="{{editBurung.suara}}" class="form-control" type="text" name="suara" required><br>
+                <label for="video">Url Video</label>
+                <input value="{{editBurung.video}}" class="form-control" type="text" name="video" required><br>
+                
+                <a href="/popupedit" style="margin-left:21px;"><br>
+                    <button type="submit" class="btn" style="background-color:#46DE99;color: white;">Update Data</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

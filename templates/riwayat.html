@@ -1,0 +1,56 @@
+{% extends 'includes/include.html' %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="../../static/css/MenuAdmin.css">
+</head>
+{% include "includes/sidebar.html" %}
+
+<div class="container">
+    <div class="daftarBurung">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                    aria-hidden="true">×</span></button>
+            {{message}}
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+        
+        <h3 style="color:#333;margin-top:40px;font-weight:500">Riwayat Prediksi</h3>
+        <table style="margin-top:20px;" class="table table-striped">
+            <thead class="thead-light">
+                <tr>
+                    <th width="20%">Nama File</th>
+                    <th width="20%">Path</th>
+                    <th width="15%">Prediksi</th>
+                    <th width="5%">Akurasi</th>
+                    <th width="10%">Tanggal</th>
+                    <th width="5%">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dataRiwayat in riwayat %}
+                <tr>
+                    <td>{{dataRiwayat.nama_file}}</td>
+                    <td>{{dataRiwayat.path}}</td>
+                    <td>{{dataRiwayat.prediksi}}</td>
+                    <td>{{dataRiwayat.akurasi}}</td>
+                    <td>{{dataRiwayat.tanggal}}</td>
+                    <td width="100">
+                        <div class="d-flex" style="justify-content: space-between">
+                            <a href="/hapusRiwayat/{{dataRiwayat.nama_file}}">
+                                <i style="font-size:16px" class="fa fa-trash text-danger" aria-hidden="true"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

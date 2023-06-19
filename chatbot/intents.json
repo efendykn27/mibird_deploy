@@ -1,0 +1,633 @@
+{
+    "intents": [{
+            "tag": "greetings",
+            "patterns": [""],
+            "responses": ["Maaf Saya tidak paham, tolong tanyakan seputar aplikasi MiBird atau seputar burung"],
+            "context": [""]
+        },
+        {
+            "tag": "aplikasi",
+            "patterns": ["Aplikasi apa?","aplikasi","Mibird"],
+            "responses": ["MiBird merupakan aplikasi untuk mempelajari tentang jenis burung, fitur utamanya yaitu ada kenali burung dan belajar burung"],
+            "context": [""]
+        },
+        {
+            "tag": "tujuan",
+            "patterns": ["tujuannya", "tujuan","digunakan untuk"],
+            "responses": ["Tujuan aplikasi MiBird adalah untuk membantu pengunjung kebun binatang khususnya di zona taman burung mengidentifikasi jenis burung dengan cepat dan Mengedukasi masyarakat yang sedang belajar tentang burung."],
+            "context": [""]
+        },
+        {
+            "tag": "fitur_kenali_burung",
+            "patterns": ["kenali", "kenali burung", "fitur kenali", "fitur kenali burung"],
+            "responses": ["Fitur Kenali burung digunakan untuk mengenali jenis burung berdasarkan foto atau gambar yang berasal dari galeri foto maupun memotret secara langsung"],
+            "context": [""]
+        },
+        {
+            "tag": "fitur_belajar_burung",
+            "patterns": ["belajar", "belajar burung", "fitur belajar", "fitur belajar burung"],
+            "responses": ["Fitur Belajar burung digunakan untuk mengedukasi masyarakat tentang jenis burung, ada 20 jenis burung yang dapat dipelajari. Anda juga bisa belajar burung lewat chatbot ini"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_parkit",
+            "patterns": ["parkit","spesies burung parkit","jenis burung parkit","spesies parkit","jenis parkit"],
+            "responses": ["Burung Parkit memliki beberapa spesies diantaranya Parkit Australia, Parkit Jambul Kuning, Parkit Jambul Merah, Parkit Jambul Abu-Abu, Parkit Nias, Parkit Kepala Hitam, Parkit Kakadu, Parkit Ekor Panjang, Parkit Matahari dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_parkit",
+            "patterns": ["burung parkit makan","makanan burung parkit","makanan parkit","parkit makan","makan burung parkit","makan parkit"],
+            "responses": ["Burung Parkit memliki beberapa makanan diantaranya Biji Bunga Matahari, Biji Jelatang, Biji Canary, Biji Millet, Bayam, Kubis, Wortel, Brokoli, Apel, Pear, Kiwi, Pisang, Telur rebus, dan Makanan khusus Burung Parkit"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_parkit",
+            "patterns": ["habitat burung parkit","dimana burung parkit","habitat parkit","dimana parkit"],
+            "responses": ["Habitat Burung Parkit yaitu Hutan, Savana, dan Padang Rumput"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_parkit",
+            "patterns": ["ukuran burung parkit","anatomi burung parkit","ukuran parkit","anatomi parkit","parkit memiliki ukuran"],
+            "responses": ["Ukuran tubuh burung parkit rata-rata mencapai panjang 18 cm dengan berat badan bervariasi. Panjang sayap parkit jantan sekitar 9 sampai 10 cm dengan panjang ekor 9 hingga 10 cm pula. Sedangkan paruh bagian atas berukuran 9-10 mm, dan memiliki tarsus 13-15 mm.Untuk parkit betina memiliki panjang sayap sekitar 9 sampai 11 cm. Ukuran panjang ekornya mencapai 9 cm dengan culme 1 cm. Sementara bagian tarsusnya berukuran 1,5 cm."],
+            "context": [""]
+        },
+        {
+            "tag": "umur_parkit",
+            "patterns": ["umur burung parkit","usia burung parkit","umur parkit","usia parkit","hidup parkit","parkit hidup","hidup burung parkit"],
+            "responses": ["Burung Parkit dapat hidup rata-rata antara 6-14 tahun ketika di sangkar, sedangkan burung yang hidup di alam bebas mampu hidup hingga 20 tahun bahkan lebih. "],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_jalak",
+            "patterns": ["jalak","spesies burung jalak","jenis burung jalak","spesies jalak","jenis jalak"],
+            "responses": ["Burung Jalak memliki beberapa spesies diantaranya Jalak Suren, Jalak Kerbau, Jalak Nias, Jalak Putih/Jalak Bodas, Jalak Thailand / Hongkong, Jalak Bali dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_jalak",
+            "patterns": ["burung jalak makan","makanan burung jalak","makanan jalak","jalak makan","makan burung jalak","makan jalak"],
+            "responses": ["Burung Jalak memliki beberapa makanan diantaranya Voer, Pisang, Kroto, dan Serangga Kecil"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_jalak",
+            "patterns": ["habitat burung jalak","dimana burung jalak","habitat jalak","dimana jalak"],
+            "responses": ["Burung Jalak biasanya memilih daerah yang memiliki sumber air dan pohon besar sebagai tempat berkumpul dan mencari makanan. Mereka juga dapat hidup di daerah yang subur dan banyak tanaman berbuah yang dapat dijadikan sumber makanan."],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_jalak",
+            "patterns": ["ukuran burung jalak","anatomi burung jalak","ukuran jalak","anatomi jalak","jalak memiliki ukuran"],
+            "responses": ["Secara umum, burung jalak memiliki panjang tubuh antara 18 hingga 30 cm dan memiliki berat antara 60 hingga 120 gram."],
+            "context": [""]
+        },
+        {
+            "tag": "umur_jalak",
+            "patterns": ["umur burung jalak","usia burung jalak","umur jalak","usia jalak"],
+            "responses": ["Burung Jalak memiliki umur yang relatif pendek, yaitu sekitar 5 hingga 10 tahun di alam liar. Namun, jika Burung Jalak dipelihara dengan baik dan diberikan perawatan yang tepat, mereka dapat hidup hingga lebih dari 10 tahun."],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_kepodang",
+            "patterns": ["kepodang","kapodang","spesies burung kepodang","jenis burung kepodang","spesies kepodang","jenis kepodang","spesies burung kapodang","jenis burung kapodang","spesies kapodang","jenis kapodang"],
+            "responses": ["Burung Kepodang memliki beberapa spesies diantaranya Kepodang Kuduk Hitam, Kepodang Batu, Kepodang Emas, Kepodang Kapur, Kepodang Tunggir Zaitun, Kepodang Seram, Kepodang Halmahera, Kepodang Timor, Kepodang Dada Merah dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_kepodang",
+            "patterns": ["burung kepodang makan","makanan burung kepodang","makanan kepodang","kepodang makan","makan burung kepodang","makan kepodang","burung kapodang makan","makanan burung kapodang","makanan kapodang","kapodang makan","makan burung kapodang","makan kapodang"],
+            "responses": ["Burung Kepodang memliki beberapa makanan diantaranya pepaya, pisang, anggur, jambu, jeruk, belalang, kupu-kupu, capung, laba-laba, kroto, jangkrik, dan ulat hongkong"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_kepodang",
+            "patterns": ["habitat burung kepodang","dimana burung kepodang","habitat kepodang","dimana kepodang","habitat burung kapodang","dimana burung kapodang","habitat kapodang","dimana kapodang"],
+            "responses": ["Burung kepodang dapat ditemukan hutan dataran rendah, hutan pegunungan, hutan sekunder, kebun, taman kota, dan perdesaan. Biasanya, Burung kepodang hidup di daerah yang memiliki vegetasi yang lebat, banyak pohon besar, dan banyak buah-buahan yang dapat dijadikan sumber makanan"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_kepodang",
+            "patterns": ["ukuran burung kepodang","anatomi burung kepodang","ukuran kepodang","anatomi kepodang","kepodang memiliki ukuran","ukuran burung kapodang","anatomi burung kapodang","ukuran kapodang","anatomi kapodang","kapodang memiliki ukuran"],
+            "responses": ["Burung Kepodang memiliki Panjang tubuh sekitar 25-32 cm dengan Berat tubuh antara 65-80 gram"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_kepodang",
+            "patterns": ["umur burung kepodang","usia burung kepodang","umur kepodang","usia kepodang"],
+            "responses": ["Secara umum, burung kepodang dapat hidup selama 7-10 tahun di alam liar. Namun, jika dipelihara di lingkungan yang aman dan nyaman seperti dalam penangkaran, burung kepodang dapat hidup lebih lama hingga mencapai usia 15 tahun atau lebih"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_Hantu",
+            "patterns": ["burung hantu","spesies burung hantu","jenis burung hantu","spesies hantu","jenis hantu"],
+            "responses": ["Burung Hantu memliki beberapa spesies diantaranya Serak Jawa, Serak Bukit, Celepuk Merah, Beluk Jampuk, Beluk Watu Jaya, Celepuk Gunung, Punggok Coklat, Barred Eagle Owl, Brown Wood Owl, Spotted Wood Owl, Buffy Fish owl dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_hantu",
+            "patterns": ["burung hantu makan","makanan burung hantu","makanan hantu","hantu makan","makan burung hantu"],
+            "responses": ["Burung Hantu memliki beberapa makanan diantaranya Burung Kecil, Tupai, Ikan, Tikus, Anakan Tikus"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_hantu",
+            "patterns": ["habitat burung hantu","dimana burung hantu","habitat hantu","dimana hantu"],
+            "responses": ["Burung Hantu rata rata suka membuat sarang di daerah seperti semak belukar, padang rumput, sawah, peternakan, perkebunan atau bahkan di sekitar kota. Daerah dataran rendah dengan ketinggian antara 1500 hingga 2000 meter dari permukaan laut menjadi daerah yang paling disukai burung hantu. Kemudian, Burung Hantu lebih menyukai untuk tinggal di daerah yang cukup terbuka"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_hantu",
+            "patterns": ["ukuran burung hantu","anatomi burung hantu","ukuran hantu","anatomi hantu","burung hantu memiliki ukuran"],
+            "responses": ["Burung Hantu secara fisik yang paling membedakannya dengan jenis burung lainnya adalah bentuk ekornya. Ukuran panjang ekor burung hantu rata rata sekitar 24 hingga 45 cm dengan panjang rata rata sekitar 75 hingga 110 cm"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_hantu",
+            "patterns": ["umur burung hantu","usia burung hantu","umur hantu","usia hantu"],
+            "responses": ["Umur rata rata Burung Hantu adalah sekitar 2 tahun. Tetapi dalam beberapa kasus terdapat burung hantu yang bisa hidup hingga lebih dari 10 tahun"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_merpati",
+            "patterns": ["merpati","spesies burung merpati","jenis burung merpati","spesies merpati","jenis merpati"],
+            "responses": ["Burung Merpati memliki beberapa spesies diantaranya Merpati Homer, Merpati Jacobin, Merpati Cumulet, Merpati Tumbler, Merpati Modena, Merpati Pajer, Merpati Brongsong, Merpati Flight, Merpati Wulung, Merpati Satinette Oriental Frill dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_merpati",
+            "patterns": ["burung merpati makan","makanan burung merpati","makanan merpati","merpati makan","makan burung merpati"],
+            "responses": ["Burung Merpati memliki beberapa makanan diantaranya Voer, Beras Merah, Jagung, Selada, Kangkung, Brokoli, Wortel, Kacang-Kacangan"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_merpati",
+            "patterns": ["habitat burung merpati","dimana burung merpati","habitat merpati","dimana merpati"],
+            "responses": ["Burung merpati dapat ditemukan di daerah hutan, perkotaan, terestrial hingga daerah gurun"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_merpati",
+            "patterns": ["ukuran burung merpati","anatomi burung merpati","ukuran merpati","anatomi merpati","burung merpati memiliki ukuran"],
+            "responses": ["Ukuran tubuh burung merpati berkisar 15 cm-75 cm. Spesies terbesarnya adalah merpati mahkota papua yang beratnya 3-4 kg. Sedangkan jenis burung merpati terkecil adalah anggota genus Colombina yang beratnya sekitar 22 gr dengan panjang 13 cm"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_merpati",
+            "patterns": ["umur burung merpati","usia burung merpati","umur merpati","usia merpati"],
+            "responses": ["Umur merpati rata-rata 6 tahun"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_perkutut",
+            "patterns": ["perkutut","spesies burung perkutut","jenis burung perkutut","spesies perkutut","jenis perkutut"],
+            "responses": ["Burung Perkutut memliki beberapa spesies diantaranya Perkutut Jawa, Perkutut Filipina, Perkutut hutan, Perkutut Pacifik, Perkutut Bangkok, Perkutut Hitam, Perkutut Lurah, Perkutut Putih dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_perkutut",
+            "patterns": ["burung perkutut makan","makanan burung perkutut","makanan perkutut","perkutut makan","makan burung perkutut"],
+            "responses": ["Burung Perkutut memliki beberapa makanan diantaranya biji-bijian rumput, jagung, beras, kedelai, ulat daun, jangkrik, belalang, ngengat"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_perkutut",
+            "patterns": ["habitat burung perkutut","dimana burung perkutut","habitat perkutut","dimana perkutut"],
+            "responses": ["Burung perkutut dapat ditemukan di hutan dataran rendah, hutan sekunder, kebun, lahan terbuka, dan perdesaan. Mereka juga dapat hidup di daerah perkotaan dan pedesaan, bahkan di lingkungan rumah tangga"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_perkutut",
+            "patterns": ["ukuran burung perkutut","anatomi burung perkutut","ukuran perkutut","anatomi perkutut","burung perkutut memiliki ukuran"],
+            "responses": ["Burung Perkutut memiliki ukuran tubuh yang relatif kecil, dengan panjang tubuh sekitar 20 cm dan berat tubuh antara 80-120 gram"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_perkutut",
+            "patterns": ["umur burung perkutut","usia burung perkutut","umur perkutut","usia perkutut"],
+            "responses": ["Burung Perkutut dapat hidup hingga usia 5-6 tahun dalam lingkungan yang optimal"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_lovebird",
+            "patterns": ["lovebird","spesies burung lovebird","jenis burung lovebird","spesies lovebird","jenis lovebird"],
+            "responses": ["Burung Lovebird memliki beberapa spesies diantaranya Rosy-faced Lovebird, Fischerâ€™s Lovebird, Masked Lovebird, Black-collared Lovebird, Black-winged Lovebird, Black-cheeked Lovebird, Red-faced Lovebird, Grey-headed Lovebird dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_lovebird",
+            "patterns": ["burung lovebird makan","makanan burung lovebird","makanan lovebird","lovebird makan","makan burung lovebird"],
+            "responses": ["Burung Lovebird memliki beberapa makanan diantaranya Biji-Bijian, Beri, Buah-Buahan, Rerumputan, Pucuk Daun, Jagung"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_lovebird",
+            "patterns": ["habitat burung lovebird","dimana burung lovebird","habitat lovebird","dimana lovebird"],
+            "responses": ["Hutan, Savana, Sungai, Gua, Pantai"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_lovebird",
+            "patterns": ["ukuran burung lovebird","anatomi burung lovebird","ukuran lovebird","anatomi lovebird","burung lovebird memiliki ukuran"],
+            "responses": ["Secara morfologi, Burung Lovebird memiliki panjang tubuh sekitar 13-17 cm dengan lebar 24 cm ketika sedang merenggangkan kedua sayapnya. Saat dewasa, tubuhnya memiliki berat 40-60 gr"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_lovebird",
+            "patterns": ["umur burung lovebird","usia burung lovebird","umur lovebird","usia lovebird"],
+            "responses": ["Jika dirawat dengan baik, Umur rata-rata burung lovebird adalah sekitar 20 hingga 30 tahun"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_kakatua",
+            "patterns": ["kakatua","spesies burung kakatua","jenis burung kakatua","spesies kakatua","jenis kakatua"],
+            "responses": ["Burung kakatua memliki beberapa spesies diantaranya Kakatua Putih, Kakatua Tanimbar, Kakatua Jambul Kuning, Kakatua Rawa, Kakatua Raja, Kakatua Maluku dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_kakatua",
+            "patterns": ["burung kakatua makan","makanan burung kakatua","makanan kakatua","kakatua makan","makan burung kakatua"],
+            "responses": ["Burung Kakatua memliki beberapa makanan diantaranya Tongkol Jagung Muda , Pepaya, Biji Bunga Matahari, Biji Kuaci, Kacang Hijau, Kacang Tanah, Wortel, Kacang Panjang"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_kakatua",
+            "patterns": ["habitat burung kakatua","dimana burung kakatua","habitat kakatua","dimana kakatua"],
+            "responses": ["Burung kakaktua merupakan penghuni hutan primer dan sekunder. Selain itu, juga bisa beradaptasi pada tepi hutan, semak-semak dengan pohon jarang, hingga lahan budidaya. Khusus jenis Kakatua Maluku, biasanya hidupnya sendiri atau cenderung soliter"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_kakatua",
+            "patterns": ["ukuran burung kakatua","anatomi burung kakatua","ukuran kakatua","anatomi kakatua","burung kakatua memiliki ukuran"],
+            "responses": ["Ukuran Burung Kakatua bervariasi tergantung pada jenisnya , Kakatua jambul kuning memiliki panjang 30-50 cm dan berat 600-1000 gram. Kakatua raja memiliki panjang 60-70 cm dan berat 800-1000 gram. Kakatua moluk memiliki panjang 50-52 cm dan berat 450-950 gram. Kakatua putih memiliki panjang 30-40 cm dan berat 300-600 gram"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_kakatua",
+            "patterns": ["umur burung kakatua","usia burung kakatua","umur kakatua","usia kakatua"],
+            "responses": ["Secara umum, burung kakatua dapat hidup hingga 40-60 tahun atau bahkan lebih di alam liar. Namun, ketika dijinakkan dan dipelihara sebagai hewan peliharaan, dapat lebih panjang"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_elang",
+            "patterns": ["elang","spesies burung elang","jenis burung elang","spesies elang","jenis elang"],
+            "responses": ["Burung Elang memliki beberapa spesies diantaranya Elang Boneli, Elang Brontok, Elang Buteo, Elang Flores, Elang Gunung, Elang Hitam, Elang Jawa, Elang Ular Bido, Elang Sulawesi, Elang Wallace, Elang Bondol, Elang Filiphina dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_elang",
+            "patterns": ["burung elang makan","makanan burung elang","makanan elang","elang makan","makan burung elang"],
+            "responses": ["Burung Elang memliki beberapa makanan diantaranya Daging Unggas, Tikus, Serangga, Tupai, Kadal, Ikan, Sapi, Kambing"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_elang",
+            "patterns": ["habitat burung elang","dimana burung elang","habitat elang","dimana elang"],
+            "responses": ["Burung Elang memilih habitat yang terisolasi dari manusia, seperti di wilayah pegunungan dan juga memiliki pasokan makanan yang melimpah, seperti di dekat air terjun atau sungai yang memiliki banyak ikan"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_elang",
+            "patterns": ["ukuran burung elang","anatomi burung elang","ukuran elang","anatomi elang","burung elang memiliki ukuran"],
+            "responses": ["Ukuran burung elang bervariasi tergantung pada spesiesnya. burung elang yang lebih kecil, seperti elang bondol memiliki panjang 50-60 cm dan rentang sayap 120-140 cm. Sementara itu, spesies burung elang besar,seperti Elang Filipina memiliki panjang tubuh 1,2 meter dan rentang sayap hingga 3 meter"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_elang",
+            "patterns": ["umur burung elang","usia burung elang","umur elang","usia elang"],
+            "responses": ["Rata-rata, burung elang dapat hidup antara 10 hingga 30 tahun, tergantung pada kondisi lingkungan dan kesehatannya"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_anis",
+            "patterns": ["burung anis","anis","spesies burung anis","jenis burung anis","spesies anis","jenis anis"],
+            "responses": ["Burung Anis memliki beberapa spesies diantaranya Anis Merah, Anis Macan, Anis Cendana, Anis Sisik, Anis Hutan, Anis Siberia, Anis Kembang, Anis Enggano dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_anis",
+            "patterns": ["burung anis makan","makanan burung anis","makanan anis","anis makan","makan burung anis"],
+            "responses": ["Burung Anis memliki beberapa makanan diantaranya Jangkrik, Kroto, Cacing, Voer, Jeruk, Pisang, dan Buah-Buahan kecil seperti Beri"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_anis",
+            "patterns": ["habitat burung anis","dimana burung anis","habitat anis","dimana anis"],
+            "responses": ["Burung anis memilih habitat yang memiliki banyak tumbuhan dan pohon-pohonan, Seperti padang rumput, area semak belukar dan hutan savana karena mereka membutuhkan tempat untuk mencari makan dan tempat bertengger"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_anis",
+            "patterns": ["ukuran burung anis","anatomi burung anis","ukuran anis","anatomi anis","burung anis memiliki ukuran"],
+            "responses": ["Ukuran burung anis bervariasi tergantung pada spesiesnya , seperti anis jangkrik memiliki panjang 25-30 cm dan berat 60-80 gram. dan Anis merah memiliki panjang 33-35 cm dan berat badan 100-140 gram"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_anis",
+            "patterns": ["umur burung anis","usia burung anis","umur anis","usia anis"],
+            "responses": ["Secara umum, burung anis dapat hidup 7-10 tahun di alam liar.Beberapa jenis yang dijinakkan dapat hidup hingga 15 tahun atau lebih"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_gelatik",
+            "patterns": ["burung gelatik","gelatik","spesies burung gelatik","jenis burung gelatik","spesies gelatik","jenis gelatik"],
+            "responses": ["Burung Gelatik memliki beberapa spesies diantaranya Gelatik Jawa, Gelatik Timor dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_gelatik",
+            "patterns": ["burung gelatik makan","makanan burung gelatik","makanan gelatik","gelatik makan","makan burung gelatik"],
+            "responses": ["Burung Gelatik memliki beberapa makanan diantaranya Voer, Millet, Biji Kenari, Biji Oat, Jagung Manis, Buah-buahan Manis, Polen atau Serbuk Sari, Sayuran, Biskuit Bayi"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_gelatik",
+            "patterns": ["habitat burung gelatik","dimana burung gelatik","habitat gelatik","dimana gelatik"],
+            "responses": ["Burung Gelatik dapat ditemukan di hutan, perkebunan, taman kota, dan bahkan di daerah perkotaan. Burung Gelatik biasanya memilih habitat yang memiliki banyak pohon dan tumbuhan, khususnya pohon berbunga, karena membutuhkan sumber makanan yang beragam"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_gelatik",
+            "patterns": ["ukuran burung gelatik","anatomi burung gelatik","ukuran gelatik","anatomi gelatik","burung gelatik memiliki ukuran"],
+            "responses": ["Burung Gelatik memiliki panjang tubuh sekitar 11-14 cm, berat badannya sekitar 9-18 gram"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_gelatik",
+            "patterns": ["umur burung gelatik","usia burung gelatik","umur gelatik","usia gelatik"],
+            "responses": ["Secara umum, Burung Gelatik dapat hidup 2-5 tahun di alam liar. Beberapa jenis yang dijinakkan dapat hidup hingga 10 tahun atau lebih"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_kenari",
+            "patterns": ["burung kenari","kenari","spesies burung kenari","jenis burung kenari","spesies kenari","jenis kenari"],
+            "responses": ["Burung Kenari memliki beberapa spesies diantaranya Kenari Border, Kenari Spanish Timbardo, Kenari Yorkshire, Kenari Roller, Kenari Gloster, Kenari Norwich, Kenari Crest dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_kenari",
+            "patterns": ["burung kenari makan","makanan burung kenari","makanan kenari","kenari makan","makan burung kenari"],
+            "responses": ["Burung Kenari memliki beberapa makanan diantaranya Biji Canary, Biji Milet, Sawi, Cabe Merah, Kubis, Wortel, Selada, Mentimun, Jagung Muda, Oyong"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_kenari",
+            "patterns": ["habitat burung kenari","dimana burung kenari","habitat kenari","dimana kenari"],
+            "responses": ["Burung Kenari ditemukan di daerah yang memiliki vegetasi yang cukup lebat dan padat, seperti hutan dan savana. Namun, juga dapat ditemukan di daerah yang lebih terbuka seperti semak belukar, kebun, dan taman kota"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_kenari",
+            "patterns": ["ukuran burung kenari","anatomi burung kenari","ukuran kenari","anatomi kenari","burung kenari memiliki ukuran"],
+            "responses": ["Burung kenari memiliki ukuran tubuh dengan panjang tubuh 12-13 cm dan berat tubuh 20-30 gram"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_kenari",
+            "patterns": ["umur burung kenari","usia burung kenari","umur kenari","usia kenari"],
+            "responses": ["Secara umum, burung kenari dapat hidup 7-10 tahun, meskipun ada beberapa laporan bahwa burung kenari dapat hidup hingga 15 tahun atau lebih"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_kacer",
+            "patterns": ["burung kacer","kacer","spesies burung kacer","jenis burung kacer","spesies kacer","jenis kacer"],
+            "responses": ["Burung Kacer memliki beberapa spesies diantaranya Kacer Poci, Kacer Jawa, Kacer Madagaskar, Kacer Blorok, Kacer Kalimantan dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_kacer",
+            "patterns": ["burung kacer makan","makanan burung kacer","makanan kacer","kacer makan","makan burung kacer"],
+            "responses": ["Burung Kacer memliki beberapa makanan diantaranya Jangkrik, Belalang, Orong-Orong, Kroto, Ulat Bambu, Ulat Hong Kong, Cacing Tanah, Voer"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_kacer",
+            "patterns": ["habitat burung kacer","dimana burung kacer","habitat kacer","dimana kacer"],
+            "responses": ["Burung Kacer ditemukan di hutan-hutan dataran rendah, semak belukar, tepi sungai, dan kebun-kebun"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_kacer",
+            "patterns": ["ukuran burung kacer","anatomi burung kacer","ukuran kacer","anatomi kacer","burung kacer memiliki ukuran"],
+            "responses": ["Burung Kacer memiliki ukuran dengan panjang tubuh 19-21 cm dan berat tubuh 45-65 gram"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_kacer",
+            "patterns": ["umur burung kacer","usia burung kacer","umur kacer","usia kacer"],
+            "responses": ["Secara umum, Burung Kacer dapat hidup 5-10 tahun, meskipun ada beberapa laporan bahwa Burung Kacer dapat hidup hingga 15 tahun atau lebih"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_pleci",
+            "patterns": ["burung pleci","pleci","spesies burung pleci","jenis burung pleci","spesies pleci","jenis pleci"],
+            "responses": ["Burung pleci memliki beberapa spesies diantaranya Dakun Maput, Dakun Marmer, Dakun Macok, Dada Kuning Bali, Dada Kuning Garut, Pleci Lombok, Buxtoni, Auriventer, Pleci Montanus, Kacamata wallacea, Kacamata sangihe, Pleci Opior jawa, Kacamata Jawa dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_pleci",
+            "patterns": ["burung pleci makan","makanan burung pleci","makanan pleci","pleci makan","makan burung pleci"],
+            "responses": ["Burung Pleci memliki beberapa makanan diantaranya Ulat kandang, ulat hongkong, dan jangkrik atau kroto"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_pleci",
+            "patterns": ["habitat burung pleci","dimana burung pleci","habitat pleci","dimana pleci"],
+            "responses": ["Habitat alami Burung Pleci adalah di hutan dataran rendah, daerah pertanian, hutan bambu, dan taman kota"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_pleci",
+            "patterns": ["ukuran burung pleci","anatomi burung pleci","ukuran pleci","anatomi pleci","burung pleci memiliki ukuran"],
+            "responses": ["Ukuran tubuh Burung Pleci jantan berkisar antara 15-17 cm, sedangkan betina memiliki ukuran lebih kecil, sekitar 14-16 cm"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_pleci",
+            "patterns": ["umur burung pleci","usia burung pleci","umur pleci","usia pleci"],
+            "responses": ["Burung Pleci memiliki usia hidup 5-10 tahun, meskipun ada beberapa laporan bahwa Burung Pleci dapat hidup hingga 12 tahun atau lebih"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_gereja",
+            "patterns": ["burung gereja","gereja","spesies burung gereja","jenis burung gereja","spesies gereja","jenis gereja"],
+            "responses": ["Burung Gereja memliki beberapa spesies diantaranya Gereja Chestnut, Gereja Erasia, Gereja Swainson’s, Gereja Laut Mati, Gereja Spanyol dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_gereja",
+            "patterns": ["burung gereja makan","makanan burung gereja","makanan gereja","gereja makan","makan burung gereja"],
+            "responses": ["Burung Gereja memliki beberapa makanan diantaranya Beras, Padi, jangkrik, Belalang, Kroto, Apel, Pir, Tomat, Pepaya, Pisang, Kol, Brokoli, Sawi, Kangkung, Voer"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_gereja",
+            "patterns": ["habitat burung gereja","dimana burung gereja","habitat gereja","dimana gereja"],
+            "responses": ["Burung gereja mendiami daerah pertanian, pemukiman penduduk, ataupun gudang yang dekat dengan sawah dan pepohonan"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_gereja",
+            "patterns": ["ukuran burung gereja","anatomi burung gereja","ukuran gereja","anatomi gereja","burung gereja memiliki ukuran"],
+            "responses": ["Panjang tubuhnya hanya sekitar 14 cm atau sebesar genggaman tangan orang dewasa"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_gereja",
+            "patterns": ["umur burung gereja","usia burung gereja","umur gereja","usia gereja"],
+            "responses": ["Burung Gereja dapat hidup 5-15 tahun di alam liar, tergantung pada kondisi lingkungan dan kesehatannya. Beberapa jenis yang dijinakkan dapat hidup hingga 20 tahun atau lebih"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_cendrawasih",
+            "patterns": ["burung cendrawasih","cendrawasih","spesies burung cendrawasih","jenis burung cendrawasih","spesies cendrawasih","jenis cendrawasih"],
+            "responses": ["Burung Cendrawasih memliki beberapa spesies diantaranya Cenderawasih Kuning, Cendrawasih Merah, Cendrawasih Biru, Cendrawasih Goldi, Cendrawasih Raggianan, Cendrawasih Belah Rotan, Cendrawasih Raja, Cendrawasih Botak, Cendrawasih Kerah, Cendrawasih Kaisar dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_cendrawasih",
+            "patterns": ["burung cendrawasih makan","makanan burung cendrawasih","makanan cendrawasih","cendrawasih makan","makan burung cendrawasih"],
+            "responses": ["Burung Cendrawasih memliki beberapa makanan diantaranya Pepaya, Kelengkeng, Mahoni, Matoa, Rambutan, Pala, Serangga"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_cendrawasih",
+            "patterns": ["habitat burung cendrawasih","dimana burung cendrawasih","habitat cendrawasih","dimana cendrawasih"],
+            "responses": ["Secara umum burung Cendrawasih hidup di daerah yang memiliki ketinggi 1400 – 1800 Meter diatas permukaan air laut. Burung cendrawasih sangat menyukai area hutan yang masih lebat dan asing ditambah dengan berbagai jenis tumbuhan yang merambat diarea hutan"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_cendrawasih",
+            "patterns": ["ukuran burung cendrawasih","anatomi burung cendrawasih","ukuran cendrawasih","anatomi cendrawasih","burung cendrawasih memiliki ukuran"],
+            "responses": ["Burung Cendrawasih memiliki panjang tubuh yang bervariasi, bergantung pada jenisnya, ukuran yang paling kecil adalah spesies cendrawasih raja dengan panjang tubuh 15 cm dan berat 50 gram, sedangkan yang terbesar adalah cendrawasih paruh hitam dengan panjang 110 cm dengan berat 430 gram"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_cendrawasih",
+            "patterns": ["umur burung cendrawasih","usia burung cendrawasih","umur cendrawasih","usia cendrawasih"],
+            "responses": ["Maksimal umur Burung Cendrawasih 30 tahun di penangkaran"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_murai",
+            "patterns": ["burung murai","murai","spesies burung murai","jenis burung murai","spesies murai","jenis murai"],
+            "responses": ["Burung Murai memliki beberapa spesies diantaranya Murai Batu Medan, Murai Batu Nias, Murai Batu Aceh, Murai Batu Jawa, Murai Irian, Murai Ekor Putih, Murai Hitam, Murai Andaman, Murai Ekor Kuning, Murai Kampung, Murai Alis Putih dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_murai",
+            "patterns": ["burung murai makan","makanan burung murai","makanan murai","murai makan","makan burung murai"],
+            "responses": ["Burung Murai memliki beberapa makanan diantaranya Jangkrik, Orong-orong, Kroto, Cacing, Ulat Hongkong, Ulat Bambu, Kelabang, Belalang, Voer"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_murai",
+            "patterns": ["habitat burung murai","dimana burung murai","habitat murai","dimana murai"],
+            "responses": ["Habitat alami Burung Murai adalah hutan tropis, hutan rawa, hutan sekunder, dan daerah bersemak-semak"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_murai",
+            "patterns": ["ukuran burung murai","anatomi burung murai","ukuran murai","anatomi murai","burung murai memiliki ukuran"],
+            "responses": ["Ukuran tubuh Burung Murai jantan berkisar 20-25 cm dengan berat 60-70 gram, sedangkan Burung Murai betina memiliki ukuran tubuh yang sedikit lebih kecil, yaitu sekitar 17-20 cm dengan berat 50-60 gram"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_murai",
+            "patterns": ["umur burung murai","usia burung murai","umur murai","usia murai"],
+            "responses": ["Burung Murai di habitat alaminya dapat hidup 5-7 tahun, namun dengan perawatan yang baik, Burung Murai yang dijinakkan dan dipelihara di rumah dapat hidup hingga 10 tahun atau lebih"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_unta",
+            "patterns": ["burung unta","spesies burung unta","jenis burung unta","spesies unta","jenis unta"],
+            "responses": ["Burung Unta memliki beberapa spesies diantaranya Burung Unta Besar, Burung Unta Kecil, Burung Unta Arab, Burung Unta Besar"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_unta",
+            "patterns": ["burung murai unta","makanan burung unta","makanan unta","unta makan","makan burung unta"],
+            "responses": ["Burung Unta memliki beberapa makanan diantaranya Rumput, Daun, Buah-buahan, Jangkrik, Belalang, Ulat, Batu atau Kerikil, Roti, Sayuran"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_unta",
+            "patterns": ["habitat burung unta","dimana burung unta","habitat unta","dimana unta"],
+            "responses": ["Habitat Burung Unta adalah daerah terbuka, seperti padang rumput, gurun pasir, savana, dan dataran tinggi. Burung Unta jarang ditemukan di hutan atau daerah bervegetasi lebat"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_unta",
+            "patterns": ["ukuran burung unta","anatomi burung unta","ukuran unta","anatomi unta","burung unta memiliki ukuran"],
+            "responses": ["Burung Unta adalah jenis burung terbesar dengan tinggi yang bisa mencapai 2,5 m dan berat hingga 100-120 kg"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_unta",
+            "patterns": ["umur burung unta","usia burung unta","umur unta","usia unta"],
+            "responses": ["Burung Unta dapat hidup hingga 40-45 tahun di alam liar dan hingga 50 tahun di penangkaran"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_kasuari",
+            "patterns": ["burung kasuari","kasuari","spesies burung kasuari","jenis burung kasuari","spesies kasuari","jenis kasuari"],
+            "responses": ["Burung Kasuari memliki beberapa spesies diantaranya Kasuari Gelambir Ganda, Kasuari Kerdil, Kasuari Gelambir Tunggal dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_kasuari",
+            "patterns": ["burung kasuari makan","makanan burung kasuari","makanan kasuari","kasuari makan","makan burung kasuari"],
+            "responses": ["Burung Kasuari memliki beberapa makanan diantaranya Serangga, Kadal, Katak, Kenari, Rotan, Pala hutan, Jambu Hutan, Palem-Paleman, Beringin, Nibun, Matoa, dan Kadang batuan-batuan kecil"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_kasuari",
+            "patterns": ["habitat burung kasuari","dimana burung kasuari","habitat kasuari","dimana kasuari"],
+            "responses": ["Hutan hujan lebat merupakan habitat favorit Burung Kasuari, namun terkadang tinggal di hutan padang rumput, hutan mangrove dan perkebunan yang berdekatan"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_kasuari",
+            "patterns": ["ukuran burung kasuari","anatomi burung kasuari","ukuran kasuari","anatomi kasuari","burung kasuari memiliki ukuran"],
+            "responses": ["Tinggi rata-rata kasuari dewasa sekitar 1,5-1,8 meter dengan berat sekitar 60 Kg. Burung ini bisa tumbuh hingga 2 m. Kasuari jantan mempunyai tubuh yang lebih kecil dibanding betinanya"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_kasuari",
+            "patterns": ["umur burung kasuari","usia burung kasuari","umur kasuari","usia kasuari"],
+            "responses": ["Umur rata-rata Burung Kasuari liar diyakini sekitar 40 sampai 50 tahun"],
+            "context": [""]
+        },
+        {
+            "tag": "spesies_enggang",
+            "patterns": ["burung enggang","enggang","spesies burung enggang","jenis burung enggang","spesies enggang","jenis enggang"],
+            "responses": ["Burung Enggang memliki beberapa spesies diantaranya Julang Sulawesi,Kangkareng Sulawesi, Julang Sumba, Enggang Klihingan, Julang Emas, Enggang Cula, Kangkareng Hitam, Kangkareng Perut-putih, Rangkong Gading, Julang Irian, Enggang Jambul, Enggang Papan dan masih banyak lagi"],
+            "context": [""]
+        },
+        {
+            "tag": "makanan_enggang",
+            "patterns": ["burung enggang makan","makanan burung enggang","makanan enggang","enggang makan","makan burung enggang"],
+            "responses": ["Burung Enggang memliki beberapa makanan diantaranya Buah Beringin, Buah Pala hutan, Buah Kenari, Hewan-hewan Kecil"],
+            "context": [""]
+        },
+        {
+            "tag": "habitat_enggang",
+            "patterns": ["habitat burung enggang","dimana burung enggang","habitat enggang","dimana enggang"],
+            "responses": ["Burung Enggang umumnya tinggal di kawasan hutan dataran rendah dengan ketinggian 0 sampai 1.000 mdpl, serta kawasan hutan tropis"],
+            "context": [""]
+        },
+        {
+            "tag": "anatomi_enggang",
+            "patterns": ["ukuran burung enggang","anatomi burung enggang","ukuran enggang","anatomi enggang","burung enggang memiliki ukuran"],
+            "responses": ["Ukuran tubuh Burung Enggang dimulai dari 40 cm - 150 cm dengan Berat paling besar yang ditemukan adalah 3,6 kg"],
+            "context": [""]
+        },
+        {
+            "tag": "umur_enggang",
+            "patterns": ["umur burung enggang","usia burung enggang","umur enggang","usia enggang"],
+            "responses": ["Usia Burung Enggang bisa mencapai 35 - 40 tahun di alam liar"],
+            "context": [""]
+        }
+    ]
+}
