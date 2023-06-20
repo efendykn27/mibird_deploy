@@ -2,7 +2,9 @@ import numpy as np
 import keras
 from datetime import date
 import pickle
-from flask_mysqldb import MySQL, MySQLdb
+# from flask_mysqldb import MySQL, MySQLdb
+import pymysql
+pymysql.install_as_MySQLdb()
 from flask import Flask, jsonify, make_response,request,flash,redirect,render_template, session,url_for, send_from_directory
 from itsdangerous import json
 from werkzeug.utils import secure_filename
