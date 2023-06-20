@@ -1,5 +1,5 @@
 Flask==1.1.2
-Flask_MySQLdb==1.0.1
+pymysql
 itsdangerous==2.0.1
 keras==2.10.0
 nltk==3.7
