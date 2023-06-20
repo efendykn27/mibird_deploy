@@ -34,12 +34,12 @@ app.config["CLIENT_IMAGES"] = FOLDER_ICON
 app.config["CLIENT_AUDIO"] = FOLDER_SUARA
 
 #konfigurasi database
-# app.config['MYSQL_HOST'] = 'localhost' #http://103.235.74.136:888/
-# app.config['MYSQL_USER'] = 'root'
-# app.config['MYSQL_PASSWORD'] = '' #7bb1245644d4f350
-# app.config['MYSQL_DB'] = 'mibird'
-# app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
-# mysql = MySQL(app)
+app.config['MYSQL_HOST'] = 'localhost' #http://103.235.74.136:888/
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = '' #7bb1245644d4f350
+app.config['MYSQL_DB'] = 'mibird'
+app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
+mysql = MySQL(app)
 
 MODEL_IMG_PATH = 'modelResnet-40+.h5'
 model_img = load_model(MODEL_IMG_PATH,compile=False)
